@@ -8,6 +8,8 @@ make
 cd ..
 cd plot_benchmark
 
+STRIDE_BYTES=33554432
+IO_SIZE_BYTES=1073741824
 
 # Compile Benchmark csv's for Read Size Trials
 ./../build/Read_size --benchmark_format=csv > benchmark.csv
@@ -19,7 +21,7 @@ cd plot_benchmark
 
 # Plot Benchmark for Read Size
 # "Title,X-axis Label,Bytes Read"
-echo "Read Size,IO Size,1073741824,plots/read_size.png" | python3 myplot.py
+echo "Read Size,IO Size,${IO_SIZE_BYTES},plots/read_size.png" | python3 myplot.py
 
 
 
@@ -33,7 +35,7 @@ echo "Read Size,IO Size,1073741824,plots/read_size.png" | python3 myplot.py
 
 # Plot Benchmark for Write Size
 # "Title,X-axis Label,Bytes Written"
-echo "Write Size,IO Size,1073741824,plots/write_size.png" | python3 myplot.py
+echo "Write Size,IO Size,${IO_SIZE_BYTES},plots/write_size.png" | python3 myplot.py
 
 
 # Compile Benchmark csv's for Read Stride 128kb Trials
@@ -46,7 +48,7 @@ echo "Write Size,IO Size,1073741824,plots/write_size.png" | python3 myplot.py
 
 # Plot Benchmark for Read Stride
 # "Title,X-axis Label,Bytes Read"
-echo "Read Stride 128kb,IO Stride,33554432,plots/read_stride.png" | python3 myplot.py
+echo "Read Stride 128kb,IO Stride,${STRIDE_BYTES},plots/read_stride.png" | python3 myplot.py
 
 # Compile Benchmark csv's for Read Stride 256kb Trials
 ./../build/Read_stride_1 --benchmark_format=csv > benchmark.csv
@@ -58,7 +60,7 @@ echo "Read Stride 128kb,IO Stride,33554432,plots/read_stride.png" | python3 mypl
 
 # Plot Benchmark for Read Stride
 # "Title,X-axis Label,Bytes Read"
-echo "Read Stride 256kb,IO Stride,33554432,plots/read_stride_1.png" | python3 myplot.py
+echo "Read Stride 256kb,IO Stride,${STRIDE_BYTES},plots/read_stride_1.png" | python3 myplot.py
 
 
 # Compile Benchmark csv's for Read Stride 1MB Trials
@@ -71,7 +73,7 @@ echo "Read Stride 256kb,IO Stride,33554432,plots/read_stride_1.png" | python3 my
 
 # Plot Benchmark for Read Stride
 # "Title,X-axis Label,Bytes Read"
-echo "Read Stride 1MB,IO Stride,33554432,plots/read_stride_2.png" | python3 myplot.py
+echo "Read Stride 1MB,IO Stride,${STRIDE_BYTES},plots/read_stride_2.png" | python3 myplot.py
 
 
 # Compile Benchmark csv's for Read Stride 2MB Trials
@@ -84,7 +86,7 @@ echo "Read Stride 1MB,IO Stride,33554432,plots/read_stride_2.png" | python3 mypl
 
 # Plot Benchmark for Read Stride
 # "Title,X-axis Label,Bytes Read"
-echo "Read Stride 2MB,IO Stride,33554432,plots/read_stride_3.png" | python3 myplot.py
+echo "Read Stride 2MB,IO Stride,${STRIDE_BYTES},plots/read_stride_3.png" | python3 myplot.py
 
 
 # Compile Benchmark csv's for Read Stride 4MB Trials
@@ -97,7 +99,7 @@ echo "Read Stride 2MB,IO Stride,33554432,plots/read_stride_3.png" | python3 mypl
 
 # Plot Benchmark for Read Stride
 # "Title,X-axis Label,Bytes Read"
-echo "Read Stride 4MB,IO Stride,33554432,plots/read_stride_4.png" | python3 myplot.py
+echo "Read Stride 4MB,IO Stride,${STRIDE_BYTES},plots/read_stride_4.png" | python3 myplot.py
 
 
 
@@ -111,7 +113,7 @@ echo "Read Stride 4MB,IO Stride,33554432,plots/read_stride_4.png" | python3 mypl
 
 # Plot Benchmark for Write Stride
 # "Title,X-axis Label,Bytes Written"
-echo "Write Stride 128kb,IO Stride,33554432,plots/write_stride.png" | python3 myplot.py
+echo "Write Stride 128kb,IO Stride,${STRIDE_BYTES},plots/write_stride.png" | python3 myplot.py
 
 # Compile Benchmark csv's for Write Stride 256kb Trials
 ./../build/Write_stride_1 --benchmark_format=csv > benchmark.csv
@@ -123,7 +125,7 @@ echo "Write Stride 128kb,IO Stride,33554432,plots/write_stride.png" | python3 my
 
 # Plot Benchmark for Write Stride
 # "Title,X-axis Label,Bytes Written"
-echo "Write Stride 256kb,IO Stride,33554432,plots/write_stride_1.png" | python3 myplot.py
+echo "Write Stride 256kb,IO Stride,${STRIDE_BYTES},plots/write_stride_1.png" | python3 myplot.py
 
 
 # Compile Benchmark csv's for Write Stride 1MB Trials
@@ -136,7 +138,7 @@ echo "Write Stride 256kb,IO Stride,33554432,plots/write_stride_1.png" | python3 
 
 # Plot Benchmark for Write Stride
 # "Title,X-axis Label,Bytes Written"
-echo "Write Stride 1MB,IO Stride,33554432,plots/write_stride_2.png" | python3 myplot.py
+echo "Write Stride 1MB,IO Stride,${STRIDE_BYTES},plots/write_stride_2.png" | python3 myplot.py
 
 
 # Compile Benchmark csv's for Write Stride 2MB Trials
@@ -149,7 +151,7 @@ echo "Write Stride 1MB,IO Stride,33554432,plots/write_stride_2.png" | python3 my
 
 # Plot Benchmark for Write Stride
 # "Title,X-axis Label,Bytes Written"
-echo "Write Stride 2MB,IO Stride,33554432,plots/write_stride_3.png" | python3 myplot.py
+echo "Write Stride 2MB,IO Stride,${STRIDE_BYTES},plots/write_stride_3.png" | python3 myplot.py
 
 
 # Compile Benchmark csv's for Write Stride 4MB Trials
@@ -162,7 +164,7 @@ echo "Write Stride 2MB,IO Stride,33554432,plots/write_stride_3.png" | python3 my
 
 # Plot Benchmark for Write Stride
 # "Title,X-axis Label,Bytes Written"
-echo "Write Stride 4MB,IO Stride,33554432,plots/write_stride_4.png" | python3 myplot.py
+echo "Write Stride 4MB,IO Stride,${STRIDE_BYTES},plots/write_stride_4.png" | python3 myplot.py
 
 
 # Compile Benchmark csv for Read Random
@@ -174,7 +176,7 @@ echo "Write Stride 4MB,IO Stride,33554432,plots/write_stride_4.png" | python3 my
 
 # Plot Benchmark for Read Random
 # "Title,X-axis Label,Bytes Read"
-echo "Read Random,IO Size,1073741824,plots/read_random.png" | python3 myplot.py
+echo "Read Random,IO Size,${IO_SIZE_BYTES},plots/read_random.png" | python3 myplot.py
 
 
 # Compile Benchmark csv for Write Random
@@ -186,4 +188,4 @@ echo "Read Random,IO Size,1073741824,plots/read_random.png" | python3 myplot.py
 
 # Plot Benchmark for Write Random
 # "Title,X-axis Label,Bytes Read"
-echo "Write Random,IO Size,1073741824,plots/write_random.png" | python3 myplot.py
+echo "Write Random,IO Size,${IO_SIZE_BYTES},plots/write_random.png" | python3 myplot.py
