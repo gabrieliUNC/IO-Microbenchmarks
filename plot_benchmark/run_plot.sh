@@ -6,7 +6,7 @@ cd build
 cmake ..
 make
 cd ..
-cd google_benchmark_plot
+cd plot_benchmark
 
 
 # Compile Benchmark csv's for Read Size Trials
