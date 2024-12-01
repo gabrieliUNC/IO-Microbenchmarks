@@ -13,6 +13,6 @@ This project performs micro-benchmark tests for I/O size, stride, and random I/O
 
 ## To Visualize data
 ``` sudo ./plot_benchmark/run_plot.sh ```
-- This will run 5 trials of each benchmark and call `myplot.py` to save the data as a line graph in `plots/'{test_plot}.txt'`
+- This will run 5 trials of each benchmark and call `myplot.py` to save the data as a line graph in `plot_benchmark/plots/'{test_plot}.txt'`
 
 
