@@ -1,0 +1,16 @@
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Read_size.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Write_size.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Read_stride.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Read_stride_1.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Read_stride_2.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Read_stride_3.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Read_stride_4.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Write_stride.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Write_stride_1.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Write_stride_2.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Write_stride_3.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Write_stride_4.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Read_random.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/Write_random.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/edit_cache.dir
+/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/build/CMakeFiles/rebuild_cache.dir
