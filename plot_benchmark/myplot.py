@@ -9,6 +9,8 @@ xlabel = arr[1]
 BYTES = int(arr[2])
 saveFile = arr[3]
 
+translate = {4096 : '4k', 8192: '8k', 16384: '16k', 32768: '32k', 65536: '64k', 131072: '128k', 262144: '256k', 524288: '512k', 1048576: '1M', 2097152: '2M', 4194304: '4M', 8388608: '8M', 16777216: '16M', 33554432: '32M', 67108864: '64M', 134217728: '128M'}
+
 try:
     os.remove(saveFile)
 except OSError:
@@ -20,6 +22,11 @@ BYTES_ARRAY = [BYTES] * 16
 #Get data as DataFrame
 df = pd.read_csv("benchmark.csv")
 names = df.loc[:, ['name']]
+for idx, row in names.iterrows():
+    name: str = str(row['name'])
+    j = name.find('/')
+    name = name[j + 1:]
+    row['name'] = translate[int(name)]
 
 df = df.loc[:, ['real_time']]
 df['real_time'] = BYTES_ARRAY / df['real_time']
