@@ -12,7 +12,7 @@ cd ..
 
 # Start running benchmark's
 
-: '
+
 printf "\n${RED}======Performing Read Size Benchmark Test======${NC}\n"
 ./build/Read_size
 printf "\n${RED}======Done with Read Size Benchmark Test======${NC}\n\n"
@@ -76,7 +76,7 @@ printf "\n${RED}======Performing Read Stride 4 Benchmark Test======${NC}\n"
 ./build/Read_stride_4
 printf "\n${RED}======Done with Read Stride 4 Benchmark Test======${NC}\n"
 printf "\n"
-'
+
 
 
 printf "\n${RED}======Performing Write Random Benchmark Test======${NC}\n"

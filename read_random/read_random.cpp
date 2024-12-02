@@ -1,9 +1,6 @@
 #include "../funcs.h"
 #include <benchmark/benchmark.h>
 
-const int lb = 0;
-const int ub = 1 << 30;
-
 static void BM_read_random(benchmark::State& state) {
 	static const int read_amt = state.range(0);
 	// Set up buffer

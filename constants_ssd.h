@@ -7,5 +7,5 @@ static const int lb = 0;
 static const int ub = MAX_BYTES;
 
 // File paths
-const char* writeFile = "output.txt";
+const char* writeFile = "output1.txt";
 const char* readFile = "/dev/zero";

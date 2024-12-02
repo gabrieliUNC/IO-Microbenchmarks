@@ -20,7 +20,7 @@ char* setupBuffer(int bytes) {
 
 void write_one_gig(int bytesPerWrite, const char* pathToFile, char* buffer, const int seekAmount) {
 	// Open file
-	int fd = open(pathToFile, O_RDWR | O_CREAT);
+	int fd = open(pathToFile, O_RDWR | O_CREAT );
 	int n = seekAmount > 0 ? MAX_STRIDE_BYTES : MAX_BYTES;
 
 	for(int cur = 0; cur < n; cur += bytesPerWrite) {
@@ -36,7 +36,7 @@ void write_one_gig(int bytesPerWrite, const char* pathToFile, char* buffer, cons
 
 void read_one_gig(int bytesPerRead, const char* pathToFile, char* buffer, const int seekAmount) {
 	// Open file
-	int fd = open(pathToFile, O_RDWR | O_CREAT);
+	int fd = open(pathToFile, O_RDWR | O_CREAT );
 	int n = seekAmount > 0 ? MAX_STRIDE_BYTES : MAX_BYTES;
 
 	for(int cur = 0; cur < n; cur += bytesPerRead) {
@@ -51,7 +51,7 @@ void read_one_gig(int bytesPerRead, const char* pathToFile, char* buffer, const 
 
 void write_random_gig(int bytesPerWrite, const char* pathToFile, char* buffer, int lb, int ub) {
 	// Open file
-	int fd = open(pathToFile, O_RDWR | O_CREAT);
+	int fd = open(pathToFile, O_RDWR | O_CREAT );
 
 	// Seed random generator
 	std::random_device dev;
@@ -71,7 +71,7 @@ void write_random_gig(int bytesPerWrite, const char* pathToFile, char* buffer, i
 
 void read_random_gig(int bytesPerRead, const char* pathToFile, char* buffer, int lb, int ub) {
 	// Open file
-	int fd = open(pathToFile, O_RDWR | O_CREAT);
+	int fd = open(pathToFile, O_RDWR | O_CREAT );
 
 	// Seed random generator
 	std::random_device dev;
