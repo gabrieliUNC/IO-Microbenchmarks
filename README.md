@@ -12,7 +12,8 @@ This project performs micro-benchmark tests for I/O size, stride, and random I/O
 - This will run all benchmarks and write the result to `benchmark_results/'{benchmark_test}.txt'`
 
 ## To Visualize data
-``` sudo ./plot_benchmark/run_plot.sh ```
+``` cd plot_benchmark ```
+``` sudo ./run_plot.sh ```
 - This will run 5 trials of each benchmark and call `myplot.py` to save the data as a line graph in `plot_benchmark/plots/'{test_plot}.txt'`
 
 
