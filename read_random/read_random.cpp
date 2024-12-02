@@ -14,6 +14,8 @@ static void BM_read_random(benchmark::State& state) {
 
 	// free buffer
 	free(buffer);
+
+         state.counters["IO Bytes"] = MAX_BYTES;
 }
 
 BENCHMARK(BM_read_random)->RangeMultiplier(2)->Range(1<<12, 1<<27);

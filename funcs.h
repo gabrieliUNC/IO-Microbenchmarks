@@ -21,9 +21,8 @@ char* setupBuffer(int bytes) {
 void write_one_gig(int bytesPerWrite, const char* pathToFile, char* buffer, const int seekAmount) {
 	// Open file
 	int fd = open(pathToFile, O_RDWR | O_CREAT );
-	int n = seekAmount > 0 ? MAX_STRIDE_BYTES : MAX_BYTES;
 
-	for(int cur = 0; cur < n; cur += bytesPerWrite) {
+	for(int cur = 0; cur < MAX_BYTES; cur += (bytesPerWrite + seekAmount)) {
 		if(seekAmount > 0)
 			lseek(fd, seekAmount, SEEK_CUR);
 		write(fd, buffer, bytesPerWrite);
@@ -37,9 +36,8 @@ void write_one_gig(int bytesPerWrite, const char* pathToFile, char* buffer, cons
 void read_one_gig(int bytesPerRead, const char* pathToFile, char* buffer, const int seekAmount) {
 	// Open file
 	int fd = open(pathToFile, O_RDWR | O_CREAT );
-	int n = seekAmount > 0 ? MAX_STRIDE_BYTES : MAX_BYTES;
 
-	for(int cur = 0; cur < n; cur += bytesPerRead) {
+	for(int cur = 0; cur < MAX_BYTES; cur += (bytesPerRead + seekAmount)) {
 		if(seekAmount > 0)
 			lseek(fd, seekAmount, SEEK_CUR);
 		read(fd, buffer, bytesPerRead);

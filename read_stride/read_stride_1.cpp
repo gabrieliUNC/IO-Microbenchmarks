@@ -21,6 +21,9 @@ static void BM_read_stride_256kb(benchmark::State& state) {
 
 	// free buffer
 	free(buffer);
+
+	// Bytes written = # Iterations * bytes written per iteration
+         state.counters["IO Bytes"] = (MAX_BYTES / (state.range(0) + read_1)) * read_1;
 }
 
 BENCHMARK(BM_read_stride_256kb)->RangeMultiplier(2)->Range(1<<12, 1<<27);

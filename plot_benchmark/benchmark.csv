@@ -1,17 +1,2 @@
-name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message
-"BM_write_size/4096",1,5.49891e+09,2.38827e+09,ns,,,,,
-"BM_write_size/8192",1,1.09303e+10,1.18805e+09,ns,,,,,
-"BM_write_size/16384",2,1.30412e+09,4.94281e+08,ns,,,,,
-"BM_write_size/32768",2,7.51705e+08,2.67248e+08,ns,,,,,
-"BM_write_size/65536",4,6.378e+08,1.78908e+08,ns,,,,,
-"BM_write_size/131072",4,8.29409e+08,1.85048e+08,ns,,,,,
-"BM_write_size/262144",4,6.79062e+08,1.49151e+08,ns,,,,,
-"BM_write_size/524288",4,7.24501e+08,1.30315e+08,ns,,,,,
-"BM_write_size/1048576",6,9.34648e+08,1.22385e+08,ns,,,,,
-"BM_write_size/2097152",6,9.06421e+08,1.43656e+08,ns,,,,,
-"BM_write_size/4194304",5,1.10336e+09,1.54641e+08,ns,,,,,
-"BM_write_size/8388608",5,6.96318e+08,1.49534e+08,ns,,,,,
-"BM_write_size/16777216",4,1.52988e+09,1.83696e+08,ns,,,,,
-"BM_write_size/33554432",4,6.42748e+08,1.57005e+08,ns,,,,,
-"BM_write_size/67108864",4,5.84612e+08,1.68962e+08,ns,,,,,
-"BM_write_size/134217728",4,1.15491e+09,1.84823e+08,ns,,,,,
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message,"IO Size"
+"BM_write_size/4096",1,1.57428e+10,2.19533e+09,ns,,,,,,1.07374e+09

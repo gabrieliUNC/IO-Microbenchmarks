@@ -1,0 +1,19 @@
+--------------------------------------------------------------------
+Benchmark                          Time             CPU   Iterations
+--------------------------------------------------------------------
+BM_write_random/4096      2.0682e+11 ns   3548142000 ns            1
+BM_write_random/8192      2.7239e+11 ns   3770381000 ns            1
+BM_write_random/16384     2.7711e+11 ns   3844183000 ns            1
+BM_write_random/32768     1.7071e+11 ns   3317783000 ns            1
+BM_write_random/65536     3.6426e+10 ns   2592831000 ns            1
+BM_write_random/131072    2.9359e+10 ns   2450639000 ns            1
+BM_write_random/262144    2.3126e+10 ns   2377134000 ns            1
+BM_write_random/524288    1.7137e+10 ns   2142574000 ns            1
+BM_write_random/1048576   1.6290e+10 ns   2075687000 ns            1
+BM_write_random/2097152   1.5794e+10 ns   2063114000 ns            1
+BM_write_random/4194304   1.5683e+10 ns   2045314000 ns            1
+BM_write_random/8388608   1.5702e+10 ns   2092329000 ns            1
+BM_write_random/16777216  1.5604e+10 ns   2036914000 ns            1
+BM_write_random/33554432  1.5673e+10 ns   2035254000 ns            1
+BM_write_random/67108864  1.5396e+10 ns   2009154000 ns            1
+BM_write_random/134217728 1.5780e+10 ns   2042722000 ns            1

@@ -7,7 +7,7 @@
   # change to plot dir
   cd plot_benchmark
   # Run benchmarks on hdd
-  source ./run_plot.sh
+  sudo ./run_plot.sh "hdd"
 
   # Change to main dir
   cd ..
@@ -16,4 +16,4 @@
   # change to plot dir
   cd plot_benchmark
   # Run benchmarks on ssd
-  source ./run_plot.sh
+  sudo ./run_plot.sh "ssd"

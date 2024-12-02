@@ -1,0 +1,19 @@
+------------------------------------------------------------------------
+Benchmark                              Time             CPU   Iterations
+------------------------------------------------------------------------
+BM_write_stride_4MB/4096        20820756 ns      9582507 ns           73
+BM_write_stride_4MB/8192        22629590 ns      9774181 ns           72
+BM_write_stride_4MB/16384       20521641 ns      9546527 ns           74
+BM_write_stride_4MB/32768       20912045 ns      9571836 ns           73
+BM_write_stride_4MB/65536       20888233 ns      9542712 ns           73
+BM_write_stride_4MB/131072      20865876 ns      9607757 ns           74
+BM_write_stride_4MB/262144      20600088 ns      9481164 ns           73
+BM_write_stride_4MB/524288      20683940 ns      9583250 ns           72
+BM_write_stride_4MB/1048576     21429687 ns      9910139 ns           72
+BM_write_stride_4MB/2097152     21262987 ns      9923574 ns           68
+BM_write_stride_4MB/4194304     22873727 ns      9954129 ns           70
+BM_write_stride_4MB/8388608     21076693 ns      9757167 ns           72
+BM_write_stride_4MB/16777216    21660401 ns      9745069 ns           72
+BM_write_stride_4MB/33554432    21021486 ns      9757431 ns           72
+BM_write_stride_4MB/67108864    20997786 ns      9727236 ns           72
+BM_write_stride_4MB/134217728   21103357 ns      9337514 ns           70

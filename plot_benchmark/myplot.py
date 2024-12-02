@@ -16,8 +16,13 @@ try:
 except OSError:
     pass
 
+
+
+
+
 # Bytes of IO to compute throughput
 BYTES_ARRAY = [BYTES] * 16
+
 
 #Get data as DataFrame
 df = pd.read_csv("benchmark.csv")
@@ -28,24 +33,25 @@ for idx, row in names.iterrows():
     name = name[j + 1:]
     row['name'] = translate[int(name)]
 
-df = df.loc[:, ['real_time']]
-df['real_time'] = BYTES_ARRAY / df['real_time']
+df['Throughput'] = df['IO Bytes'] / df['real_time']
+df = df.loc[:, ['Throughput']]
 
 df2 = pd.read_csv("benchmark_2.csv")
-df2 = df2.loc[:, ['real_time']]
-df2['real_time'] = BYTES_ARRAY / df2['real_time']
+df2['Throughput'] = df2['IO Bytes'] / df2['real_time']
+df2 = df2.loc[:, ['Throughput']]
 
 df3 = pd.read_csv("benchmark_3.csv")
-df3 = df3.loc[:, ['real_time']]
-df3['real_time'] = BYTES_ARRAY / df3['real_time']
+df3['Throughput'] = df3['IO Bytes'] / df3['real_time']
+df3 = df3.loc[:, ['Throughput']]
+
 
 df4 = pd.read_csv("benchmark_4.csv")
-df4 = df4.loc[:, ['real_time']]
-df4['real_time'] = BYTES_ARRAY / df4['real_time']
+df4['Throughput'] = df4['IO Bytes'] / df4['real_time']
+df4 = df4.loc[:, ['Throughput']]
 
 df5 = pd.read_csv("benchmark_5.csv")
-df5 = df5.loc[:, ['real_time']]
-df5['real_time'] = BYTES_ARRAY / df5['real_time']
+df5['Throughput'] = df5['IO Bytes'] / df5['real_time']
+df5 = df5.loc[:, ['Throughput']]
 
 # Get 5 trial data
 res = pd.concat([df, df2, df3, df4, df5], axis=1)
