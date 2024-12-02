@@ -1,6 +1,6 @@
 # IO-Microbenchmarks
 
-This project performs micro-benchmark tests for I/O size, stride, and random I/Os using the Google Benchmark library and visualizing the data using the matplotlib library.
+This project performs micro-benchmark tests for I/O size, stride, and random I/Os using the Google Benchmark library and visualizes the data using the matplotlib library.
 
 ## To Run Benchmarks
 ``` sudo ./run_benchmarks.sh ```
