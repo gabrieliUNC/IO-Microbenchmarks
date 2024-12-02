@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 
 # Set constants head for hdd
