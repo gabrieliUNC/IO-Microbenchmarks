@@ -73,4 +73,4 @@ Random writes should have by far the worst throughput and highest variance on HH
 
 
 ## Optimal Pattern
-Based on these observations, the optimal IO pattern is reading sequentially with large read size from an SSD as it yields the best throughput. This is due to the smallest seek time and amortized overhead of per-read cost by the bytes transferred over the read
+Based on these observations, the optimal IO pattern is reading sequentially with large read size from an SSD as it yields the best throughput. This is due to the smallest seek time and amortized overhead of per-read cost by the bytes transferred over the read.
