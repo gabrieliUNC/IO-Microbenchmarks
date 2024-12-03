@@ -12,7 +12,7 @@
   # Change to main dir
   cd ..
   # Use Constants for ssd
-  cp constants_sdd.h constants.h
+  cp constants_ssd.h constants.h
   # change to plot dir
   cd plot_benchmark
   # Run benchmarks on ssd

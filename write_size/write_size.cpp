@@ -16,7 +16,7 @@ static void BM_write_size(benchmark::State& state) {
 	// free buffer
 	free(buffer);
 
-	state.counters["IO Size"] = MAX_BYTES;
+	state.counters["IO Bytes"] = MAX_BYTES;
 }
 
 BENCHMARK(BM_write_size)->RangeMultiplier(2)->Range(1<<12, 1<<27);
