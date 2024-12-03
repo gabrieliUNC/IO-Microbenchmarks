@@ -6,8 +6,7 @@ import os
 arr = input().split(',')
 title = arr[0]
 xlabel = arr[1]
-BYTES = int(arr[2])
-saveFile = arr[3]
+saveFile = arr[2]
 
 # Create map for x-axis labels
 x_axis = {4096 : '4k', 8192: '8k', 16384: '16k', 32768: '32k', 65536: '64k', 131072: '128k', 262144: '256k', 524288: '512k', 1048576: '1M', 2097152: '2M', 4194304: '4M', 8388608: '8M', 16777216: '16M', 33554432: '32M', 67108864: '64M', 134217728: '128M'}

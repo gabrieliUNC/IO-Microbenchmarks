@@ -12,8 +12,6 @@ cd ..
 
 # Start running benchmark's
 
-
-
 printf "\n${RED}======Performing Read Size Benchmark Test======${NC}\n"
 ./build/Read_size --benchmark_counters_tabular=true
 printf "\n${RED}======Done with Read Size Benchmark Test======${NC}\n\n"
