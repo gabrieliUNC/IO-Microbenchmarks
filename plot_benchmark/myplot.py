@@ -9,29 +9,26 @@ xlabel = arr[1]
 BYTES = int(arr[2])
 saveFile = arr[3]
 
-translate = {4096 : '4k', 8192: '8k', 16384: '16k', 32768: '32k', 65536: '64k', 131072: '128k', 262144: '256k', 524288: '512k', 1048576: '1M', 2097152: '2M', 4194304: '4M', 8388608: '8M', 16777216: '16M', 33554432: '32M', 67108864: '64M', 134217728: '128M'}
+# Create map for x-axis labels
+x_axis = {4096 : '4k', 8192: '8k', 16384: '16k', 32768: '32k', 65536: '64k', 131072: '128k', 262144: '256k', 524288: '512k', 1048576: '1M', 2097152: '2M', 4194304: '4M', 8388608: '8M', 16777216: '16M', 33554432: '32M', 67108864: '64M', 134217728: '128M'}
 
+# remove old graph if exists
 try:
     os.remove(saveFile)
 except OSError:
     pass
 
 
-
-
-
-# Bytes of IO to compute throughput
-BYTES_ARRAY = [BYTES] * 16
-
-
 #Get data as DataFrame
 df = pd.read_csv("benchmark.csv")
 names = df.loc[:, ['name']]
+
+# Perform name substitution
 for idx, row in names.iterrows():
     name: str = str(row['name'])
     j = name.find('/')
     name = name[j + 1:]
-    row['name'] = translate[int(name)]
+    row['name'] = x_axis[int(name)]
 
 df['Throughput'] = df['IO Bytes'] / df['real_time']
 df = df.loc[:, ['Throughput']]
@@ -55,7 +52,6 @@ df5 = df5.loc[:, ['Throughput']]
 
 # Get 5 trial data
 res = pd.concat([df, df2, df3, df4, df5], axis=1)
-#print(res)
 
 # Compute Stats
 means = res.mean(axis=1)
@@ -74,9 +70,6 @@ res['upper'] = upper
 res['lower'] = lower
 
 
-#print(res)
-
-
 #Plot DataFrame as Line graph
 to_plot = names
 df = res.loc[:, ['mean']]
@@ -91,4 +84,3 @@ plt.ylabel('Throughput (bytes / ns)')
 
 # Save files
 plt.savefig(saveFile, dpi=300);
-#plt.show()
