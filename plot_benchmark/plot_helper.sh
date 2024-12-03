@@ -12,8 +12,6 @@ printf '\n'
 echo "Running benchmarks on $1 and putting results in $1 folder"
 printf '\n'
 
-STRIDE_BYTES=33554432
-IO_SIZE_BYTES=1073741824
 
 # Compile Benchmark csv's for Read Size Trials
 ./../build/Read_size --benchmark_format=csv --benchmark_counters_tabular=true > benchmark.csv

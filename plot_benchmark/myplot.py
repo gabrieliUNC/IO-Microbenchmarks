@@ -29,6 +29,9 @@ for idx, row in names.iterrows():
     name = name[j + 1:]
     row['name'] = x_axis[int(name)]
 
+# Compute throughput for all trials
+# as IO Bytes / Time (ns) of trial
+
 df['Throughput'] = df['IO Bytes'] / df['real_time']
 df = df.loc[:, ['Throughput']]
 
@@ -49,7 +52,7 @@ df5 = pd.read_csv("benchmark_5.csv")
 df5['Throughput'] = df5['IO Bytes'] / df5['real_time']
 df5 = df5.loc[:, ['Throughput']]
 
-# Get 5 trial data
+# Compile 5 trial data
 res = pd.concat([df, df2, df3, df4, df5], axis=1)
 
 # Compute Stats
@@ -69,12 +72,12 @@ res['upper'] = upper
 res['lower'] = lower
 
 
-#Plot DataFrame as Line graph
+# Plot DataFrame as Line graph
 to_plot = names
 df = res.loc[:, ['mean']]
 to_plot = pd.concat([to_plot, df], axis=1)
-#print(to_plot)
 
+# Add Error bars for 95% Confidence Interval
 cur = to_plot.plot(x='name', y='mean')
 cur.errorbar(to_plot['name'], to_plot['mean'], yerr=[res['mean'] - res['lower'], res['upper'] - res['mean']], fmt='none', capsize=5)
 plt.xlabel(xlabel)
