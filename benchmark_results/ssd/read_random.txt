@@ -1,19 +1,19 @@
 ------------------------------------------------------------------------------
 Benchmark                         Time             CPU   Iterations   IO Bytes
 ------------------------------------------------------------------------------
-BM_read_random/4096       160984177 ns    160984250 ns            4   1.07374G
-BM_read_random/8192       164396729 ns    164396000 ns            4   1.07374G
-BM_read_random/16384      165994021 ns    165994000 ns            4   1.07374G
-BM_read_random/32768      165921021 ns    165921000 ns            4   1.07374G
-BM_read_random/65536      166252521 ns    166252500 ns            4   1.07374G
-BM_read_random/131072     163618989 ns    163617750 ns            4   1.07374G
-BM_read_random/262144     164439677 ns    164439500 ns            4   1.07374G
-BM_read_random/524288     165177083 ns    165177250 ns            4   1.07374G
-BM_read_random/1048576    165156094 ns    165156000 ns            4   1.07374G
-BM_read_random/2097152    165566229 ns    165566000 ns            4   1.07374G
-BM_read_random/4194304    165941458 ns    165941500 ns            4   1.07374G
-BM_read_random/8388608    166138594 ns    166138500 ns            4   1.07374G
-BM_read_random/16777216   166324115 ns    166324000 ns            4   1.07374G
-BM_read_random/33554432   166353583 ns    166353750 ns            4   1.07374G
-BM_read_random/67108864   166414792 ns    166415000 ns            4   1.07374G
-BM_read_random/134217728  166553146 ns    166553000 ns            4   1.07374G
+BM_read_random/4096       161836021 ns    161836000 ns            4   1.07374G
+BM_read_random/8192       163238573 ns    163238500 ns            4   1.07374G
+BM_read_random/16384      163697146 ns    163696750 ns            4   1.07374G
+BM_read_random/32768      166148156 ns    166117000 ns            4   1.07374G
+BM_read_random/65536      165037000 ns    165037250 ns            4   1.07374G
+BM_read_random/131072     164915489 ns    164915750 ns            4   1.07374G
+BM_read_random/262144     165024188 ns    165024250 ns            4   1.07374G
+BM_read_random/524288     164849875 ns    164849750 ns            4   1.07374G
+BM_read_random/1048576    165281302 ns    165281250 ns            4   1.07374G
+BM_read_random/2097152    164906615 ns    164906500 ns            4   1.07374G
+BM_read_random/4194304    165033937 ns    165033750 ns            4   1.07374G
+BM_read_random/8388608    164989042 ns    164988750 ns            4   1.07374G
+BM_read_random/16777216   164875510 ns    164875250 ns            4   1.07374G
+BM_read_random/33554432   164900479 ns    164900250 ns            4   1.07374G
+BM_read_random/67108864   164853062 ns    164853000 ns            4   1.07374G
+BM_read_random/134217728  164916927 ns    164916750 ns            4   1.07374G

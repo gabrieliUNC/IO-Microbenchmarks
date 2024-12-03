@@ -23,7 +23,7 @@ static void BM_write_stride_4MB(benchmark::State& state) {
 	free(buffer);
 
 	// Bytes written = # Iterations * bytes written per iteration
-         state.counters["IO Bytes"] = (MAX_BYTES / (state.range(0) + write_4)) * write_4;
+         state.counters["IO Bytes"] = (MAX_BYTES / (double)(state.range(0) + write_4)) * write_4;
 }
 
 BENCHMARK(BM_write_stride_4MB)->RangeMultiplier(2)->Range(1<<12, 1<<27);

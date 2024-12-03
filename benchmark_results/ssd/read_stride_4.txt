@@ -1,19 +1,19 @@
 ----------------------------------------------------------------------------------
 Benchmark                             Time             CPU   Iterations   IO Bytes
 ----------------------------------------------------------------------------------
-BM_read_stride_4MB/4096        17429391 ns     17429325 ns           40   1.06955G
-BM_read_stride_4MB/8192        17424957 ns     17424975 ns           40   1.06955G
-BM_read_stride_4MB/16384       17429550 ns     17429550 ns           40   1.06955G
-BM_read_stride_4MB/32768       17552204 ns     17549700 ns           40   1.06535G
-BM_read_stride_4MB/65536       17303690 ns     17303700 ns           40   1.05696G
-BM_read_stride_4MB/131072      17030050 ns     17030049 ns           41   1.04019G
-BM_read_stride_4MB/262144      16483214 ns     16483214 ns           42   1.00663G
-BM_read_stride_4MB/524288      15586177 ns     15586178 ns           45   952.107M
-BM_read_stride_4MB/1048576     14032622 ns     14032640 ns           50   855.638M
-BM_read_stride_4MB/2097152     11700086 ns     11700083 ns           60   713.032M
-BM_read_stride_4MB/4194304      8762280 ns      8762275 ns           80   536.871M
-BM_read_stride_4MB/8388608      5889319 ns      5889176 ns          119   356.516M
-BM_read_stride_4MB/16777216     3567068 ns      3567066 ns          196    213.91M
-BM_read_stride_4MB/33554432     1995178 ns      1995160 ns          351   117.441M
-BM_read_stride_4MB/67108864     1106634 ns      1106633 ns          626   62.9146M
-BM_read_stride_4MB/134217728     559413 ns       559413 ns         1258   29.3601M
+BM_read_stride_4MB/4096        17122550 ns     17120902 ns           41   1.07269G
+BM_read_stride_4MB/8192        17069751 ns     17069756 ns           41   1.07165G
+BM_read_stride_4MB/16384       17074065 ns     17074073 ns           41   1.06956G
+BM_read_stride_4MB/32768       17002398 ns     17002415 ns           41   1.06542G
+BM_read_stride_4MB/65536       16859939 ns     16859952 ns           42   1.05722G
+BM_read_stride_4MB/131072      16590246 ns     16590238 ns           42    1.0412G
+BM_read_stride_4MB/262144      16053973 ns     16053977 ns           44   1.01058G
+BM_read_stride_4MB/524288      15202221 ns     15202217 ns           46   954.437M
+BM_read_stride_4MB/1048576     13667942 ns     13667961 ns           51   858.993M
+BM_read_stride_4MB/2097152     11403945 ns     11403951 ns           61   715.828M
+BM_read_stride_4MB/4194304      8563641 ns      8563610 ns           82   536.871M
+BM_read_stride_4MB/8388608      5740209 ns      5740213 ns          122   357.914M
+BM_read_stride_4MB/16777216     3477295 ns      3477292 ns          202   214.748M
+BM_read_stride_4MB/33554432     1944878 ns      1944877 ns          358   119.305M
+BM_read_stride_4MB/67108864     1078055 ns      1078056 ns          648   63.1613M
+BM_read_stride_4MB/134217728     546041 ns       546041 ns         1287   32.5376M
