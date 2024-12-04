@@ -57,7 +57,7 @@ printf "\n"
 
 
 printf "\n======Performing Read Stride 1 Benchmark Test======\n"
-./build/Read_stride_1 --benchmark_counters_tabular=true > benchmark_results/ssd/read_size_1.txt
+./build/Read_stride_1 --benchmark_counters_tabular=true > benchmark_results/ssd/read_stride_1.txt
 printf "\n======Done with Read Stride 1 Benchmark Test======\n"
 printf "\n"
 
