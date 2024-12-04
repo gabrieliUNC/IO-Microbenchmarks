@@ -22,7 +22,10 @@ This project performs micro-benchmark tests for I/O size, stride, and random I/O
 # Analysis
 
 ## Specs
-Macbook Air laptop with M3 Chip and 256GB SSD
+All these measurements were performed on a Macbook Air laptop with M3 Chip and 256GB SSD.
+
+## Intro
+I chose to use the Google benchmark library after watching this [CppConVideo](https://www.youtube.com/watch?v=nXaxk27zwlk) by Chandler Carruth on benchmarking in cpp. Although there was some learning curve, writing the benchmarks turned out to be much easier with this library then it would have been on my own. In particular, the argument passing custom counters provided, [tooling](https://github.com/google/benchmark/blob/main/docs/user_guide.md), made it much simpler to calculate throughput. In addition, as described in [Runtime and Reporting Considerations](https://github.com/google/benchmark/blob/main/docs/user_guide.md) "The number of iterations to run is determined dynamically by running the benchmark a few times and measuring the time taken and ensuring that the ultimate result will be statistically stable". Which I found to be awesome. Despite this, for creating the plots of benchmarks my script still runs each benchmark 5 times.
 
 ## Solid State Drive
 
