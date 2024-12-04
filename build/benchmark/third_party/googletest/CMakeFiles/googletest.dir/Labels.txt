@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/CMakeFiles/googletest
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/CMakeFiles/googletest.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/CMakeFiles/googletest-complete.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/stamp/googletest-build.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/stamp/googletest-configure.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/stamp/googletest-download.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/stamp/googletest-install.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/stamp/googletest-mkdir.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/stamp/googletest-patch.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/stamp/googletest-test.rule
+/mnt/learncli/workdir/lab5/build/benchmark/third_party/googletest/stamp/googletest-update.rule

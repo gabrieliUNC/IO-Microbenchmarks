@@ -3,8 +3,7 @@ project(MyProject)
 set(CMAKE_CXX_STANDARD 17)
 
 # Google Benchmark Setup
-find_package(benchmark REQUIRED)
-
+add_subdirectory(benchmark)
 # All benchmark executables
 
 # Read size exe

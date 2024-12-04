@@ -8,15 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/stick/Coding/Docker/Comp530/learncli211/workdir/lab5/write_random/write_random.cpp" "CMakeFiles/Write_random.dir/write_random/write_random.cpp.o" "gcc" "CMakeFiles/Write_random.dir/write_random/write_random.cpp.o.d"
+  "/mnt/learncli/workdir/lab5/write_random/write_random.cpp" "CMakeFiles/Write_random.dir/write_random/write_random.cpp.o" "gcc" "CMakeFiles/Write_random.dir/write_random/write_random.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/mnt/learncli/workdir/lab5/build/benchmark/src/CMakeFiles/benchmark.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
