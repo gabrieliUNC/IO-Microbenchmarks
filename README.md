@@ -2,6 +2,19 @@
 
 This project performs micro-benchmark tests for I/O size, stride, and random I/Os using the Google Benchmark library and visualizes the data using the matplotlib library.
 
+## Setup
+To get this to work on Docker, I enabled the option BENCHMARK_DOWNLOAD_DEPENDENCIES which mainly allows cmake to get the google test library that this library relies on. This should ensure that everything works out of the box when the script runs. If not, these are the steps to rebuild the cmake build directory from [google benchmark install](https://github.com/google/benchmark).
+
+``` cd benchmark ```
+
+If /build exists remove it
+
+``` cmake -E make_directory "build" ```
+
+``` cmake -E chdir "build" cmake -DBENCHMARK_DOWNLOAD_DEPENDENCIES=on -DCMAKE_BUILD_TYPE=Release ../ ```
+
+``` cmake --build "build" --config Release ```
+
 ## To Run Benchmarks
 ``` sudo ./run_benchmarks.sh ```
 - This will run all benchmarks and print their result to the terminal in tabular format
