@@ -22,7 +22,7 @@ This project performs micro-benchmark tests for I/O size, stride, and random I/O
 # Analysis
 
 ## Specs
-Macbook Air laptop with M3 Chip
+Macbook Air laptop with M3 Chip and 256GB SSD
 
 ## Solid State Drive
 
