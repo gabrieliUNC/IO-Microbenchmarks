@@ -1,1 +1,3 @@
 build/CMakeCache.txt
+benchmark/build/CMakeCache.txt
+benchmark/build/third_party/googletest/CMakeCache.txt
